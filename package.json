@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/KaloS95/Assignment_Exam/issues"
   },
-  "homepage": "https://github.com/KaloS95/Assignment_Exam#readme"
+  "homepage": "https://github.com/KaloS95/Assignment_Exam#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1"
+  }
 }

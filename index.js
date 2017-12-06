@@ -1,9 +1,14 @@
 var http = require('http');
 
-var http = require('http');
+var express = require('express');
+var app = express();
 
-//create a server object:
-http.createServer(function (req, res) {
-  res.write('Hello World! blabla sara'); //write a response to the client
-  res.end(); //end the response
-}).listen(process.env.PORT || 8080); //the server object listens on port 8080 
+// respond with "hello world" when a GET request is made to the homepage
+app.get('/', function (req, res) {
+  res.send('Ciaone');
+})
+
+
+app.listen(process.env.PORT || 8080);
+
+
